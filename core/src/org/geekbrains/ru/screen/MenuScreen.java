@@ -25,7 +25,7 @@ public class MenuScreen extends BaseScreen {
         space = new Texture("space.jpg");
         touch = new Vector2();
         v = new Vector2(1, 1);
-       // location = new Vector2(0, 0);
+        location = new Vector2(0, 0);
 
 
     }
@@ -36,8 +36,8 @@ public class MenuScreen extends BaseScreen {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
         batch.begin();
         batch.draw(space, 0, 0, 800, 480);
-       // batch.draw(ship, location.x, location.y);
-        //wing();
+        batch.draw(ship, location.x, location.y);
+        wing();
 
 
         batch.end();
@@ -58,7 +58,7 @@ public class MenuScreen extends BaseScreen {
         return false;
     }
 
-  /*  private void wing() {
+    private void wing() {
         if (touch.x < location.x) {
             location.add(-v.x, 0);
         }
@@ -74,7 +74,7 @@ public class MenuScreen extends BaseScreen {
         }
 
     }
-    */
+    
 
 
     @Override
