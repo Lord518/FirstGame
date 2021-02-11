@@ -54,7 +54,7 @@ public class MenuScreen extends BaseScreen {
     @Override
     public boolean touchDown(int screenX, int screenY, int pointer, int button) {
         touch.set(screenX, Gdx.graphics.getHeight() - screenY);
-        //System.out.println("Location ship x = " + location.x + " y=" + location.y);
+        System.out.println("Location ship x = " + location.x + " y=" + location.y);
         return false;
     }
 
