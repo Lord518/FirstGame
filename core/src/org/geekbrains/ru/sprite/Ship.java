@@ -22,7 +22,7 @@ public class Ship extends Sprite {
     }
 
 
-  /*  @Override
+    @Override
     public void update(float delta) {
         tmp.set(touch);
         if (tmp.sub(pos).len() > 0.01f) {
@@ -30,7 +30,7 @@ public class Ship extends Sprite {
         } else {
             pos.set(touch);
         }
-    }*/
+    }
 
     @Override
     public boolean touchDown(Vector2 touch, int pointer, int button) {

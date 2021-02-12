@@ -44,7 +44,7 @@ public class MenuScreen extends BaseScreen {
         batch.begin();
         background.draw(batch);
         ship.draw(batch);
-       // ship.update(delta);
+        ship.update(delta);
         batch.end();
     }
 
@@ -59,14 +59,14 @@ public class MenuScreen extends BaseScreen {
     @Override
     public void resize(Rect worldBounds)
     {
-       // ship.resize(worldBounds);
+        ship.resize(worldBounds);
         background.resize(worldBounds);
     }
 
     @Override
     public boolean touchDown(Vector2 touch, int pointer, int button)
     {
-        //ship.touchDown(touch, pointer, button);
+        ship.touchDown(touch, pointer, button);
         System.out.println(touch.x + " " + touch.y);
         return super.touchDown(touch, pointer, button);
     }
