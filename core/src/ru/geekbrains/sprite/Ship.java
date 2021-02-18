@@ -25,7 +25,7 @@ public class Ship extends Sprite {
     private TextureRegion bulletRegion;
     private Vector2 bulletV;
     private Vector2 bulletPos;
-   // private Sound sound;
+    private Sound sound;
 
     private boolean pressedLeft;
     private boolean pressedRight;
@@ -43,7 +43,7 @@ public class Ship extends Sprite {
         bulletV = new Vector2(0, 0.5f);
         bulletPos = new Vector2();
         reloadInterval = 0.70f;
-       // sound = Gdx.audio.newSound(Gdx.files.internal("sounds/bullet.wav"));
+        sound = Gdx.audio.newSound(Gdx.files.internal("sounds/bullet.wav"));
     }
 
     @Override
@@ -165,7 +165,7 @@ public class Ship extends Sprite {
     }
 
     private void shoot() {
-     //   sound.play(0.2f);
+        sound.play(0.2f);
         Bullet bullet = bulletPool.obtain();
         bulletPos.set(pos.x, pos.y + getHalfHeight());
         bullet.set(this, bulletRegion, bulletPos, bulletV, 0.01f, worldBounds, 1);

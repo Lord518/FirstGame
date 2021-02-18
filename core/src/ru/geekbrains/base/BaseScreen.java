@@ -19,7 +19,7 @@ public class BaseScreen implements Screen, InputProcessor {
     private Rect screenBounds;
     private Rect glBounds;
     private Rect worldBounds;
-    //private Music music;
+    private Music music;
 
     private Matrix4 worldToGl;
     private Matrix3 screenToWorld;
@@ -37,10 +37,10 @@ public class BaseScreen implements Screen, InputProcessor {
         worldToGl = new Matrix4();
         screenToWorld = new Matrix3();
         touch = new Vector2();
-//        music = Gdx.audio.newMusic(Gdx.files.internal("sounds/music.mp3"));
-//        music.setVolume(5f);
-//        music.play();
-//        music.setLooping(true);
+        music = Gdx.audio.newMusic(Gdx.files.internal("sounds/music.mp3"));
+        music.setVolume(5f);
+        music.play();
+        music.setLooping(true);
     }
 
     @Override
@@ -89,7 +89,7 @@ public class BaseScreen implements Screen, InputProcessor {
     public void dispose() {
         System.out.println("dispose");
         batch.dispose();
-//        music.dispose();
+        music.dispose();
     }
 
     @Override
