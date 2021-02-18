@@ -1,4 +1,4 @@
-package org.geekbrains.ru.base;
+package ru.geekbrains.base;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputProcessor;
@@ -7,7 +7,9 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Matrix3;
 import com.badlogic.gdx.math.Matrix4;
 import com.badlogic.gdx.math.Vector2;
-import org.geekbrains.ru.math.*;
+
+import ru.geekbrains.math.MatrixUtils;
+import ru.geekbrains.math.Rect;
 
 public class BaseScreen implements Screen, InputProcessor {
 
@@ -103,14 +105,14 @@ public class BaseScreen implements Screen, InputProcessor {
 
     @Override
     public boolean touchDown(int screenX, int screenY, int pointer, int button) {
-        System.out.println("touchDown px screenX = " + screenX + " screenY = " + screenY);
+        System.out.println("touchDown screenX = " + screenX + " screenY = " + screenY);
         touch.set(screenX, Gdx.graphics.getHeight() - screenY).mul(screenToWorld);
         touchDown(touch, pointer, button);
         return false;
     }
 
     public boolean touchDown(Vector2 touch, int pointer, int button) {
-        System.out.println("touchDown world touchX = " + touch.x + " touchY = " + touch.y);
+        System.out.println("touchDown touchX = " + touch.x + " touchY = " + touch.y);
         return false;
     }
 
@@ -149,10 +151,5 @@ public class BaseScreen implements Screen, InputProcessor {
     public boolean scrolled(float amountX, float amountY) {
         return false;
     }
-
-//    @Override
-//public boolean scrolled(int amount) {
-//        System.out.println("scrolled amount = " + amount);
-//        return false;
-//    }
 }
+

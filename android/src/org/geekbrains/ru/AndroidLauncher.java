@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
-import org.geekbrains.ru.FirstGame;
+import ru.geekbrains.FirstGame;
 
 public class AndroidLauncher extends AndroidApplication {
 	@Override

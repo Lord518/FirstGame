@@ -1,10 +1,10 @@
-package org.geekbrains.ru.sprite;
+package ru.geekbrains.sprite;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import org.geekbrains.ru.base.Sprite;
-import org.geekbrains.ru.math.Rect;
 
+import ru.geekbrains.base.Sprite;
+import ru.geekbrains.math.Rect;
 
 public class Background extends Sprite {
 
