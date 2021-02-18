@@ -10,7 +10,7 @@ import ru.geekbrains.math.Rect;
 import ru.geekbrains.pool.BulletPool;
 
 public class Ship extends Sprite {
-/*
+
     private static final float HEIGHT = 0.15f;
     private static final float PADDING = 0.05f;
     private static final int INVALID_POINTER = -1;
@@ -165,5 +165,4 @@ public class Ship extends Sprite {
         bulletPos.set(pos.x, pos.y + getHalfHeight());
         bullet.set(this, bulletRegion, bulletPos, bulletV, 0.01f, worldBounds, 1);
     }
-*/
 }
