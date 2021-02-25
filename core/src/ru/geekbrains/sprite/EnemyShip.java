@@ -26,11 +26,10 @@ public class EnemyShip extends Ship {
         if (getBottom() < worldBounds.getBottom()) {
             destroy();
         }
-//        if (getTop() > worldBounds.getTop()) {
-//            reloadTimer = reloadInterval * 0.8f;
-//        } else if(!v0.equals(v)) {
-//            v.set(v0);
-//        }
+        if (getTop() > worldBounds.getTop()) {            reloadTimer = reloadInterval * 0.8f;
+          } else if(!v0.equals(v)) {
+            v.set(v0);
+        }
         bulletPos.set(pos.x, pos.y - getHalfHeight());
     }
 
@@ -54,6 +53,6 @@ public class EnemyShip extends Ship {
         this.reloadInterval = reloadInterval;
         setHeightProportion(height);
         this.hp = hp;
-//        v.set(0, -0.3f);
+        v.set(0, -0.3f);
     }
 }
