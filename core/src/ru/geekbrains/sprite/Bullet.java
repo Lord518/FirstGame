@@ -1,7 +1,5 @@
 package ru.geekbrains.sprite;
 
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector2;
 
@@ -9,6 +7,7 @@ import ru.geekbrains.base.Sprite;
 import ru.geekbrains.math.Rect;
 
 public class Bullet extends Sprite {
+
     private final Vector2 v;
     private Rect worldBounds;
     private int damage;
@@ -17,7 +16,6 @@ public class Bullet extends Sprite {
     public Bullet() {
         this.v = new Vector2();
         regions = new TextureRegion[1];
-
     }
 
     public void set(

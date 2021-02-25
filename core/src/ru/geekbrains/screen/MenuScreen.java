@@ -23,7 +23,6 @@ public class MenuScreen extends BaseScreen {
     private Texture bg;
     private TextureAtlas atlas;
 
-
     private Background background;
     private Star[] stars;
 
@@ -39,7 +38,6 @@ public class MenuScreen extends BaseScreen {
         super.show();
         bg = new Texture("textures/bg.png");
         atlas = new TextureAtlas(Gdx.files.internal("textures/menuAtlas.tpack"));
-
         background = new Background(bg);
         stars = new Star[STAR_COUNT];
         for (int i = 0; i < STAR_COUNT; i++) {
