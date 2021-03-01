@@ -150,7 +150,7 @@ public class MainShip extends Ship {
         );
     }
 
-   /* public void startNewGame() {
+    public void startNewGame() {
         hp = HP;
         pressedLeft = false;
         pressedRight = false;
@@ -159,7 +159,7 @@ public class MainShip extends Ship {
         stop();
         pos.x = worldBounds.pos.x;
         flushDestroy();
-    }*/
+    }
 
     private void moveRight() {
         v.set(v0);

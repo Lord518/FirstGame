@@ -220,12 +220,12 @@ public class GameScreen extends BaseScreen {
         }
         batch.end();
     }
-   /* public void startNewGame ()
-    {
+
+    public void startNewGame() {
         state = State.PLAYING;
         mainShip.startNewGame();
         bulletPool.freeAllActiveSprites();
         enemyPool.freeAllActiveSprites();
         explosionPool.freeAllActiveSprites();
-    }*/
+    }
 }
